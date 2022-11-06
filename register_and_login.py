@@ -1,6 +1,7 @@
 import re
 
 #<-----------choices for register and login ------------->
+
 def choices():
     while True:
         choice = int(input("For Register press 1 \n\nFor Login press 2\n\nEnter: "))
@@ -10,6 +11,8 @@ def choices():
             return login()
         else:
             print("--------------------------------------Please Enter Valid Number--------------------------------------")
+
+#<-----------choices for register and forget_password ------------->            
 
 def reg_forget():
     while True:
@@ -57,7 +60,7 @@ def register():
                 # print(*l)
                 # print("Email Valid")
 
-                # <-----------------pass validation ---------------->
+# <------------------------------------------pass validation -------------------------------------->
 
                 while True:
                     password = input("Enter your password: ")
@@ -84,6 +87,9 @@ def register():
         else:
                     print("Please enter in correct formate")
 
+                
+#<---------------------------------stage-2 Login-------------------------------------->
+
 def login():
     while True:
         flag = 0
@@ -109,6 +115,7 @@ def login():
             print("--------------------please register---------------")
             choices()
 
+#<----------------------------------------stage-3 forget_password--------------------------------------------------->
 
 def forget_password():
     while True:
